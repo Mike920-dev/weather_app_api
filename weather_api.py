@@ -35,22 +35,33 @@ response = get_json_response('https://community-open-weather-map.p.rapidapi.com/
 #here download data from rapidapis's server
 content = get_data_from_server(response)
 
+#test
+# pprint(content)
+
 #Download info about temperature
 currentTemperatureInfo = content['main']
 
-#default: Kelvin degrees, download info about current temp and feels_like temp
+#default: Kelvin degrees, download info about current_temp, min_temp, max_temp and feels_like_temp
 currentTemperatureKelvin = currentTemperatureInfo['temp']
 feelsLikeTemperatureKelvin = currentTemperatureInfo['feels_like']
+minTemperatureKelvin = currentTemperatureInfo['temp_min']
+maxTemperatureKelvin = currentTemperatureInfo['temp_max']
 
 #tests
 # print(currentTemperatureKelvin)
-# # print(feelsLikeTemperatureKelvin)
+# print(feelsLikeTemperatureKelvin)
+# print(minTemperatureKelvin)
+# print(maxTemperatureKelvin)
 
 #convert Kelvin degs into Celsius degs
 currentTemperatureCelsius = round((currentTemperatureKelvin - ZERO_DEGREES_KELVIN), 2)
 feelsLikeTempreatureCelsius = round((feelsLikeTemperatureKelvin - ZERO_DEGREES_KELVIN), 2)
+minTemperatureCelsius = round((minTemperatureKelvin - ZERO_DEGREES_KELVIN), 2)
+maxTemperatureCelsius = round((maxTemperatureKelvin - ZERO_DEGREES_KELVIN), 2)
 
 #display current temp and feels_like temp
 print("Temperatura: " + str(currentTemperatureCelsius))
 print("Temperatura odczuwalna: " + str(feelsLikeTempreatureCelsius))
+print("Temperatura minimalna: " + str(minTemperatureCelsius))
+print("Temperatura maksymalna: " + str(maxTemperatureCelsius))
     
