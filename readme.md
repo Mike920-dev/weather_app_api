@@ -1,6 +1,6 @@
 :cloud: APLIKACJA POGODOWA aka weatherApp :cloud:
 
-Autor: Michał Ślęzak
+Author: Michał Ślęzak
 
 Age: 16 :one::six:
 
