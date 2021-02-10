@@ -21,7 +21,8 @@ response = requests.get('https://community-open-weather-map.p.rapidapi.com/weath
 #here download data from rapidapis's server
 try:
     content = response.json()
-except json.decoder.JSONDecodeError:
+except json.decoder.JSONDecodeError as error:
+    print(error)
     print("Nieprawidłowy format!")
 else:
     # pprint(content)
