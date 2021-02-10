@@ -15,4 +15,4 @@ Aplikacja jest nadal rozwijana, planuję też przenieść ją z terminala do apl
 Więcej info za chwilę :blush:
 
 
-KOPIOWANIE LUB UŻYWANIE KODU BEZ ZGODY AUTORA/WŁAŚCICIELA JEST ZABRONIONE
+KOPIOWANIE LUB UŻYWANIE KODU BEZ ZGODY AUTORA/WŁAŚCICIELA JEST ZABRONIONE :happy:
