@@ -9,5 +9,7 @@ Version: 1.0
 
 
 -----------OPIS PL----------------
+
+
 Aplikacja jest nadal rozwijana, planuję też przenieść ją z terminala do aplikacji okienkowej.
 Więcej info za chwilę :blush:
