@@ -32,7 +32,7 @@ params = {
 #make a request  https://community-open-weather-map.p.rapidapi.com/weather credentials.headers params
 response = get_json_response('https://community-open-weather-map.p.rapidapi.com/weather', credentials.headers, params)
 
-#here download data from rapidapis's server
+# download data from rapidapis's server
 content = get_data_from_server(response)
 
 #test
@@ -59,9 +59,14 @@ feelsLikeTempreatureCelsius = round((feelsLikeTemperatureKelvin - ZERO_DEGREES_K
 minTemperatureCelsius = round((minTemperatureKelvin - ZERO_DEGREES_KELVIN), 2)
 maxTemperatureCelsius = round((maxTemperatureKelvin - ZERO_DEGREES_KELVIN), 2)
 
+#get info about description(weather)
+weatherDescriptionContent = content['weather']
+weatherDescription = weatherDescriptionContent[0]['description'].capitalize()
+
 #display current temp and feels_like temp
 print("Temperatura: " + str(currentTemperatureCelsius))
 print("Temperatura odczuwalna: " + str(feelsLikeTempreatureCelsius))
 print("Temperatura minimalna: " + str(minTemperatureCelsius))
 print("Temperatura maksymalna: " + str(maxTemperatureCelsius))
+print("Ogólne informacje o pogodzie: " + weatherDescription + ".")
     
