@@ -13,3 +13,6 @@ Version: 1.0
 
 Aplikacja jest nadal rozwijana, planuję też przenieść ją z terminala do aplikacji okienkowej.
 Więcej info za chwilę :blush:
+
+
+KOPIOWANIE LUB UŻYWANIE KODU BEZ ZGODY AUTORA/WŁAŚCICIELA JEST ZABRONIONE
